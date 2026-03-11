@@ -8,4 +8,8 @@ module Calculator
   def self.subtract(a, b)
     a - b
   end
+
+  def self.hello
+    "Hello, world!"
+  end
 end

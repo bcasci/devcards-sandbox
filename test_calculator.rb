@@ -9,4 +9,8 @@ class TestCalculator < Minitest::Test
   def test_subtract
     assert_equal 1, Calculator.subtract(3, 2)
   end
+
+  def test_hello
+    assert_equal "Hello, world!", Calculator.hello
+  end
 end

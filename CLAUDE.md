@@ -4,7 +4,7 @@ A minimal Ruby project for DevCards end-to-end QA testing.
 
 ## Structure
 
-- `calculator.rb` - Simple Calculator module with add/subtract
+- `calculator.rb` - Simple Calculator module with add/subtract/hello
 - `test_calculator.rb` - Minitest tests for Calculator
 - `Gemfile` - Ruby dependencies
 

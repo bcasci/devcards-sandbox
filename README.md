@@ -54,6 +54,14 @@ bin/rails db:create db:migrate db:seed
 - Click "Sign in with GitHub" — OAuth flow creates your user
 - Create a project, add **bcasci/devcards-sandbox** as a repo, and start creating issues
 
+## Calculator Module
+
+The `Calculator` module provides these class methods:
+
+- `Calculator.add(a, b)` - Returns the sum of two numbers
+- `Calculator.subtract(a, b)` - Returns the difference of two numbers
+- `Calculator.hello` - Returns `"Hello, world!"`
+
 ## What Happens Next
 
 Once the above is done, see [issue #364](https://github.com/bcasci/devcards/issues/364) in the DevCards repo for AI-led post-setup verification and first-run steps.

@@ -23,4 +23,14 @@ class TestCalculator < Minitest::Test
     assert_equal(-6, Calculator.multiply(-2, 3))
     assert_equal 6, Calculator.multiply(-2, -3)
   end
+
+  def test_divide
+    assert_equal 2.0, Calculator.divide(6, 3)
+    assert_equal 0.5, Calculator.divide(1, 2)
+    assert_equal(-3.0, Calculator.divide(-6, 2))
+    assert_equal(-3.0, Calculator.divide(6, -2))
+    assert_equal 3.0, Calculator.divide(-6, -2)
+    assert_equal 0.0, Calculator.divide(0, 5)
+    assert_raises(ArgumentError) { Calculator.divide(1, 0) }
+  end
 end

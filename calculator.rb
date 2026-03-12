@@ -12,4 +12,9 @@ module Calculator
   def self.multiply(a, b)
     a * b
   end
+
+  def self.divide(a, b)
+    raise ArgumentError, "Division by zero" if b == 0
+    a.to_f / b
+  end
 end

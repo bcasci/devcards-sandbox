@@ -32,6 +32,8 @@ class TestCalculator < Minitest::Test
     assert_equal 3.0, Calculator.divide(-6, -2)
     assert_equal 0.0, Calculator.divide(0, 5)
     assert_raises(ArgumentError) { Calculator.divide(1, 0) }
+    assert_raises(ArgumentError) { Calculator.divide(-5, 0) }
+    assert_raises(ArgumentError) { Calculator.divide(0, 0) }
   end
 
   def test_power

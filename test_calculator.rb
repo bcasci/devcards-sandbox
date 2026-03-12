@@ -33,4 +33,16 @@ class TestCalculator < Minitest::Test
     assert_equal 0.0, Calculator.divide(0, 5)
     assert_raises(ArgumentError) { Calculator.divide(1, 0) }
   end
+
+  def test_power
+    assert_equal 8, Calculator.power(2, 3)
+    assert_equal 1, Calculator.power(5, 0)
+    assert_equal 0.25, Calculator.power(2, -2)
+    assert_equal 0, Calculator.power(0, 3)
+    assert_equal(-8, Calculator.power(-2, 3))
+    assert_equal 4, Calculator.power(-2, 2)
+    assert_equal 8.0, Calculator.power(2.0, 3)
+    assert_instance_of Float, Calculator.power(2, -1)
+    assert_raises(ArgumentError) { Calculator.power(0, -1) }
+  end
 end

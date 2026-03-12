@@ -8,6 +8,13 @@ class TestCalculator < Minitest::Test
 
   def test_subtract
     assert_equal 1, Calculator.subtract(3, 2)
+    assert_equal(-1, Calculator.subtract(2, 3))
+    assert_equal 0, Calculator.subtract(5, 5)
+    assert_equal(-2, Calculator.subtract(-3, -1))
+    assert_equal(-5, Calculator.subtract(-3, 2))
+    assert_equal 1.0, Calculator.subtract(1.5, 0.5)
+    assert_equal 3, Calculator.subtract(3, 0)
+    assert_equal(-3, Calculator.subtract(0, 3))
   end
 
   def test_multiply

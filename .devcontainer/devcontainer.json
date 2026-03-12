@@ -1,5 +1,10 @@
 {
   "name": "devcards-sandbox",
   "image": "mcr.microsoft.com/devcontainers/ruby:3.3",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  },
   "postCreateCommand": "bundle install && npm install -g @anthropic-ai/claude-code"
 }

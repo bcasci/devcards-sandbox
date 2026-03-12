@@ -20,8 +20,11 @@ class TestCalculator < Minitest::Test
   def test_multiply
     assert_equal 12, Calculator.multiply(3, 4)
     assert_equal 0, Calculator.multiply(0, 5)
+    assert_equal 0, Calculator.multiply(5, 0)
     assert_equal(-6, Calculator.multiply(-2, 3))
     assert_equal 6, Calculator.multiply(-2, -3)
+    assert_equal 0.02, Calculator.multiply(0.1, 0.2)
+    assert_equal 3.0, Calculator.multiply(1.5, 2.0)
   end
 
   def test_divide

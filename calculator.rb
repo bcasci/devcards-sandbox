@@ -17,4 +17,13 @@ module Calculator
     raise ArgumentError, "Division by zero" if b == 0
     a.to_f / b
   end
+
+  def self.power(base, exponent)
+    if exponent < 0
+      raise ArgumentError, "Division by zero" if base == 0
+      1.0 / (base ** -exponent)
+    else
+      base ** exponent
+    end
+  end
 end

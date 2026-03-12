@@ -6,5 +6,5 @@
       "version": "22"
     }
   },
-  "postCreateCommand": "bundle install && npm install -g @anthropic-ai/claude-code"
+  "postCreateCommand": "bundle install && npm install -g @anthropic-ai/claude-code && git config --global credential.helper '\!f() { echo username=x-access-token; echo password=$GITHUB_TOKEN; }; f'"
 }
